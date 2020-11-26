@@ -1,0 +1,190 @@
+:root 
+{
+    --left-color: rgb(81, 168, 255);
+    --right-color: rgb(21, 32, 43); 
+    --bright-color: rgb(255,255,255);
+    --footer-link-color: #aab8c2;
+    --footer-top-boarder-color: #e6ecf0;
+} 
+
+::after, ::before
+{
+    box-sizing: border-box;
+}
+
+
+input
+{
+    border: solid black;
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(49,74,100);
+    color : #8899A6;
+    padding: 10px 10px;
+    display: inline-block;
+    
+}
+
+ul
+{
+    list-style:none;
+}
+
+/* 아래 after, before 공부*/
+
+
+body, html
+{
+    margin: 0x;
+    padding: 0x;
+
+
+}
+svg
+{
+        color: rgba(29,161,242,1.00);
+        position: static;
+        height: 90vh;
+        left: 5vh;
+        top: -30vh;
+        fill: currentcolor;
+}
+.container .right-box .head .input-box 
+{
+    background-color: rgb(49,74,100)
+}
+
+.container .right-box .head .input-box .forgot-password
+{
+    color: #1B95E0;
+}
+
+p,a,h1,h2,h3,li, span
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container
+{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 85vh 15v;
+}
+
+.container .left-box
+{
+    background-color: var(--left-color);
+    grid-column: 1 / 2;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    
+    /*grid-row: 1 / 2 ;*/ 
+}
+
+.container .left-box ul li
+{
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 50px 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container .left-box ul li .icon
+{
+    font-size: 24px;
+    margin-right: 10px;
+}
+/* end left-box */
+
+
+/* right-box */
+
+.container .right-box
+{
+    background-color: var(--right-color);
+    grid-column: 2 / -1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right-box .card
+{
+    min-width: 300px;
+    padding:0 60px;
+
+}
+
+.container .right-box .card .head .input-group .forgot-password
+{
+    color: #1B95E0;
+}
+.container .right-box .card .head
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contariner .right-box .card .head .logo-icon
+{
+    font-size: 3em;
+    color : var(--right-color);
+    
+}
+.container .right-box .card h1
+{
+    font-size: 27px;
+    line-height: 32px;
+    color: var(--bright-color); 
+    
+}
+
+
+.container .right-box .card p
+{   
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--bright-color); /* 여기 폰트 색깔이*/
+}
+
+
+
+button.btn
+{
+    display: block;
+    border:none;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: bold;
+
+}
+
+button.block
+{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+button.primary
+
+{
+    background-color:  var(--left-color);
+    color: #fff;
+}
+
+
+
+button.outline
+{
+    background-color: rgb(21, 32, 43);
+    color: var(--left-color);
+    border: 1px solid var(--left-color);
+}
+
+
